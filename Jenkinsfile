@@ -1,10 +1,13 @@
 pipeline {
   agent any
 
+  environment {
+    PATH = "/home/linuxbrew/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+  }
+
   stages {
     stage('build') {
       steps {
-        sh 'export PATH=/home/linuxbrew/bin:$PATH'
         sh 'which python'
         sh 'echo $PATH'
         sh 'virtualenv --no-site-packages testenv'
