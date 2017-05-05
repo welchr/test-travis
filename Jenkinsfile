@@ -10,7 +10,7 @@ pipeline {
       steps {
         sh 'which python'
         sh 'echo $PATH'
-        sh 'python3 -m virtualenv --no-site-packages testenv'
+        sh 'python2 -m virtualenv --no-site-packages testenv'
         sh 'source testenv/bin/activate'
         sh 'testenv/bin/pip install --no-cache-dir -r requirements.txt'
       }
