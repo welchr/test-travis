@@ -3,14 +3,14 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'virtualenv testenv'
+        sh 'virtualenv --no-site-packages testenv'
         sh 'source testenv/bin/activate'
-        sh 'pip2 install -r requirements.txt'
+        sh 'testenv/bin/pip install -r requirements.txt'
       }
     }
     stage('test') {
       steps {
-        sh 'pytest --pyargs nin --junitxml report.xml'
+        sh 'testenv/bin/pytest --pyargs nin --junitxml report.xml'
         junit 'report.xml'
       }
     }
