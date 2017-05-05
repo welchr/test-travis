@@ -3,6 +3,8 @@ pipeline {
   stages {
     stage('build') {
       steps {
+        sh 'virtualenv -p /usr/bin/python testenv'
+        sh 'source testenv/bin/activate'
         sh 'pip2 install -r requirements.txt'
       }
     }
