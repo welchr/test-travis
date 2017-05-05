@@ -45,3 +45,5 @@ blah
 blah
 
 trigger
+
+trigger, fixed permissions on virtualenv lib
