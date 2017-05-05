@@ -6,6 +6,7 @@ pipeline {
       steps {
         sh 'export PATH=/home/linuxbrew/bin:$PATH'
         sh 'which python'
+        sh 'echo $PATH'
         sh 'virtualenv --no-site-packages testenv'
         sh 'source testenv/bin/activate'
         sh 'testenv/bin/pip install --no-cache-dir -r requirements.txt'
