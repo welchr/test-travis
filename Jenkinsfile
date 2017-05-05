@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh 'virtualenv --no-site-packages testenv'
         sh 'source testenv/bin/activate'
-        sh 'testenv/bin/pip install -r requirements.txt'
+        sh 'testenv/bin/pip install --no-cache-dir -r requirements.txt'
       }
     }
     stage('test') {
