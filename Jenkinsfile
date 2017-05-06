@@ -22,9 +22,11 @@ pipeline {
       }
     }
     stage('cleanup') {
-      sh 'deactivate'
-      sh 'rm -rf testenv'
-      sh 'rm -f report.xml'
+      steps {
+        sh 'deactivate'
+        sh 'rm -rf testenv'
+        sh 'rm -f report.xml'
+      }
     }
   }
 }
