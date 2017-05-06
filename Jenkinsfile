@@ -11,7 +11,6 @@ pipeline {
         sh 'which python'
         sh 'echo $PATH'
         sh 'python2 -m virtualenv --no-site-packages testenv'
-        sh 'source testenv/bin/activate'
         sh 'testenv/bin/pip install --no-cache-dir -r requirements.txt'
       }
     }
@@ -23,7 +22,6 @@ pipeline {
     }
     stage('cleanup') {
       steps {
-        sh 'deactivate'
         sh 'rm -rf testenv'
         sh 'rm -f report.xml'
       }
