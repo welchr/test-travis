@@ -21,5 +21,10 @@ pipeline {
         junit 'report.xml'
       }
     }
+    stage('cleanup') {
+      sh 'deactivate'
+      sh 'rm -rf testenv'
+      sh 'rm -f report.xml'
+    }
   }
 }
