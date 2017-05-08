@@ -43,16 +43,3 @@ blah
 blah
 
 blah
-
-trigger
-
-trigger, fixed permissions on virtualenv lib
-trigger
-trigger
-trigger
-trigger
-dkdkdkdkd
-
-d.dldldldldld.dfsfdsdfdsfdsfds
-
-dkdkdkd
