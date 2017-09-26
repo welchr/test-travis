@@ -1,5 +1,5 @@
 def foo(x):
-  return x + 1
+  return x + 2
 
 def blah(z):
   return z + 42
