@@ -1,3 +1,5 @@
+[wiki](../../wiki)
+
 Test
 
 1
