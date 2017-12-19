@@ -1,5 +1,7 @@
 [wiki](../../wiki)
 
+[stuff](stuff/foo.md)
+
 Test
 
 1
