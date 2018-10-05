@@ -1,0 +1,14 @@
+div.sphinxsidebar {
+  width: 240px;
+}
+
+img.logo {
+  margin-bottom: 20px;
+}
+
+h1.logo {
+  display: block;
+  line-height:0;
+  height: 0;
+  overflow: hidden;
+}

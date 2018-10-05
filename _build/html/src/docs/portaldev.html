@@ -1,0 +1,168 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>1. portaldev.sph.umich.edu &#8212; locuszoom-services  documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="2. locuszoom.org" href="locuszoom.org.html" />
+    <link rel="prev" title="locuszoom-services" href="../../index.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="portaldev-sph-umich-edu">
+<span id="portaldev-sph-umich-edu"></span><h1>1. portaldev.sph.umich.edu<a class="headerlink" href="#portaldev-sph-umich-edu" title="Permalink to this headline">¶</a></h1>
+<p>This is the production (and development) server for the locuszoom API. It hosts a number of services that are required for the API to function.</p>
+<div class="section" id="flask">
+<span id="flask"></span><h2>1.1. Flask<a class="headerlink" href="#flask" title="Permalink to this headline">¶</a></h2>
+<p>There are three flask servers running in total:</p>
+<ol class="simple">
+<li>Production LZ API</li>
+<li>Development LZ API</li>
+<li>UKBB API</li>
+</ol>
+<div class="section" id="production">
+<span id="production"></span><h3>1.1.1. Production<a class="headerlink" href="#production" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="development">
+<span id="development"></span><h3>1.1.2. Development<a class="headerlink" href="#development" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="ukbb">
+<span id="ukbb"></span><h3>1.1.3. UKBB<a class="headerlink" href="#ukbb" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="postgresql">
+<span id="postgresql"></span><h2>1.2. PostgreSQL<a class="headerlink" href="#postgresql" title="Permalink to this headline">¶</a></h2>
+<p>There are 3 PostgreSQL servers running on the machine.</p>
+<ol class="simple">
+<li>A version 9.4 server that hosts the production (<code class="docutils literal notranslate"><span class="pre">api_public_prod</span></code>) and staging databases (<code class="docutils literal notranslate"><span class="pre">api_internal_dev</span></code>) for the locuszoom API.</li>
+<li>A version 9.5 server that was automatically installed when upgrading to Ubuntu 16.04 LTS. It does not serve anything currently.</li>
+<li>A version 10.5 server that hosts the database for the UKBB API.</li>
+</ol>
+</div>
+<div class="section" id="raw-datasets">
+<span id="raw-datasets"></span><h2>1.3. Raw datasets<a class="headerlink" href="#raw-datasets" title="Permalink to this headline">¶</a></h2>
+<p>All of the raw data (with the exception of UKBB) for loading the database also exists on portaldev under <code class="docutils literal notranslate"><span class="pre">/data/portal_datasets</span></code>.</p>
+</div>
+<div class="section" id="ld-server">
+<span id="ld-server"></span><h2>1.4. LD Server<a class="headerlink" href="#ld-server" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="redis">
+<span id="redis"></span><h2>1.5. Redis<a class="headerlink" href="#redis" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="jenkins">
+<span id="jenkins"></span><h2>1.6. Jenkins<a class="headerlink" href="#jenkins" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="monitor">
+<span id="monitor"></span><h2>1.7. Monitor<a class="headerlink" href="#monitor" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../index.html">
+              <img class="logo" src="../../_static/logo.png" alt="Logo"/>
+            </a></p>
+<h1 class="logo"><a href="../../index.html">locuszoom-services</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. portaldev.sph.umich.edu</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#flask">1.1. Flask</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#production">1.1.1. Production</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#development">1.1.2. Development</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ukbb">1.1.3. UKBB</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#postgresql">1.2. PostgreSQL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#raw-datasets">1.3. Raw datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ld-server">1.4. LD Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#redis">1.5. Redis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#jenkins">1.6. Jenkins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#monitor">1.7. Monitor</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="locuszoom.org.html">2. locuszoom.org</a></li>
+<li class="toctree-l1"><a class="reference internal" href="snowwhite.html">3. snowwhite.sph.umich.edu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build-docs.html">4. Building the docs</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../../index.html" title="previous chapter">locuszoom-services</a></li>
+      <li>Next: <a href="locuszoom.org.html" title="next chapter">2. locuszoom.org</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Center for Statistical Genetics.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+      |
+      <a href="../../_sources/src/docs/portaldev.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
