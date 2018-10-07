@@ -19,3 +19,5 @@
    ```
 
 Done!
+
+<img src="cat.jpg" width=200/>
