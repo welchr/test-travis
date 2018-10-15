@@ -18,6 +18,4 @@
    pipenv run make html
    ```
 
-Done!
-
 <img src="cat.jpg" width=200/>
