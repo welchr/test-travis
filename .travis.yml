@@ -1,10 +1,13 @@
 language: python
 
+python:
+- '3.6'
+
 services:
 - postgresql
 
-python:
-- '3.6'
+addons:
+  postgresql: "9.4"
 
 before_install:
 - openssl aes-256-cbc -K $encrypted_123b787db187_key -iv $encrypted_123b787db187_iv -in .ssh/locuszoom-db.enc -out .ssh/locuszoom-db -d && chmod 600 .ssh/locuszoom-db
