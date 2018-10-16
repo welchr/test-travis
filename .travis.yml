@@ -13,10 +13,12 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_123b787db187_key -iv $encrypted_123b787db187_iv -in .ssh/locuszoom-db.enc -out .ssh/locuszoom-db -d && chmod 600 .ssh/locuszoom-db
 
 install:
+- export TRAVIS_HOME=`pwd`
 - ssh-agent bash -c 'ssh-add .ssh/locuszoom-db; git clone git@github.com:statgen/locuszoom-db.git lzdb'
 - pip install pytest psycopg2-binary
 - cd lzdb/db/pytest
 - python pytest_initdb.py --host 127.0.0.1 --port 5432 --user postgres --connect-db postgres --database pytest
+- cd $TRAVIS_HOME
 
 script:
 - pytest
